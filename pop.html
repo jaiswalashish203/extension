@@ -1,0 +1,50 @@
+     <!DOCTYPE html>
+     <html lang="en-US">
+         <head>
+             
+             
+             <meta charset="UTF-8" />
+             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+             <link rel="stylesheet" href="css/popup.css" />
+         </head>
+         
+         <body>
+             <div class="container">
+                 <h3 class="heading">Password Manager</h3>
+             </div>
+             
+             
+             <div class="container" id="registerPanel">
+                <form action="https://localhost/db1/new1.php" method="POST">
+                 <div class="form-group">
+                     <label class="control-label" for="usr" id="userLabel">
+                         <span class="glyphicon glyphicon-user"></span> Username
+                     </label>
+                     <div>
+                         <input type="text" class="form-control" id="usr" name="username" placeholder="Enter your Username">
+                         <p id="errorStatus"></p>
+                     </div>
+                 </div>
+       
+                 <p id="errorStatus"></p>
+                 
+                 <div class="form-group">
+                     <label class="control-label" for="pwd" id="masterLabel">
+                         <span class="glyphicon glyphicon-lock"></span> Password
+                     </label>
+                     <div>
+                         <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter your Password">
+                     </div>
+                 </div>
+       
+                 <div class="form-group buttonSection"> 
+                     <div class="col-sm-offset-2 col-sm-10">
+                         <button type="submit" class="btn btn-primary" id="loginButton">Submit</button>
+                     </div>
+                 </div>
+                </form>
+             </div>
+         </body>
+                 
+         
+     </html>
